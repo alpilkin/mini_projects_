@@ -102,16 +102,17 @@ def draw_move(board):
     victory_for(board, "X")
 
 
-# Board creation
-initial_board = []
-initial_board.append([j for j in range(1, 4)])   # First row
-initial_board.append([j for j in range(4, 7)])   # Second row
-initial_board.append([j for j in range(7, 10)])  # Third row
-initial_board[1][1] = "X"
+if __name__ == '__main__':
+    # Board creation
+    initial_board = []
+    initial_board.append([j for j in range(1, 4)])   # First row
+    initial_board.append([j for j in range(4, 7)])   # Second row
+    initial_board.append([j for j in range(7, 10)])  # Third row
+    initial_board[1][1] = "X"
 
-print("""
-Let's begin our little game...
-My turn is first ))))
-        """)
-display_board(initial_board)
-enter_move(initial_board)
+    print("""
+    Let's begin our little game...
+    My turn is first ))))
+            """)
+    display_board(initial_board)
+    enter_move(initial_board)
